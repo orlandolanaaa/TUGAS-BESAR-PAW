@@ -36,7 +36,6 @@ if(!isset($_SESSION["user_id"]))
         </div>
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
-            
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
                 <li><a class="active" href="#" >Home</a></li>
 				<li><a href="#" >Pasang Lowongan</a></li>
@@ -55,7 +54,7 @@ if(!isset($_SESSION["user_id"]))
 		<strong>
 			<h1 >Cari Lowongan Pekerjaan</h1>
 			<i>
-				<h2 >Berdasarkan Lokasi Anda</h2>
+				<h2 >Berdasarkan Lokasi Andaaaa</h2>
 			</i>
 		</strong>
 	</div>
