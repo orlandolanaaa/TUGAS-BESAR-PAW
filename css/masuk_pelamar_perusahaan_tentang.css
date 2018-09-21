@@ -38,7 +38,7 @@ div.more{
 
 
 .image{
-	background-image: url(img/image3.jpg);
+	background-image: url(../img/image3.jpg);
 	height: 650px;
 	  background-position: center;
 	  background-repeat: no-repeat;
@@ -48,7 +48,7 @@ div.more{
 }
 
 .image2{
-	background-image: url(img/masuk.jpg);
+	background-image: url(../img/masuk.jpg);
 	height: 650px;
 	  background-position: center;
 	  background-repeat: no-repeat;
@@ -58,7 +58,7 @@ div.more{
 }
 
 .image3{
-	background-image: url(img/perusahaan.jpg);
+	background-image: url(../img/perusahaan_daftar.jpg);
 	height: 650px;
 	  background-position: center;
 	  background-repeat: no-repeat;
