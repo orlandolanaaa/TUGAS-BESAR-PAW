@@ -126,7 +126,7 @@ div.more{
 	.column {
 		text-align: center;
 		float: none;
-		width: 50%;
+		width: 100%;
 		padding: 30px;
 		height: 300px;
 	    background-repeat: no-repeat;
