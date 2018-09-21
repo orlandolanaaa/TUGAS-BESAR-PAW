@@ -54,7 +54,7 @@ if(!isset($_SESSION["user_id"]))
 		<strong>
 			<h1 >Cari Lowongan Pekerjaan</h1>
 			<i>
-				<h2 >Berdasarkan Lokasi Andaaaa</h2>
+				<h2 >Berdasarkan Lokasi Anda</h2>
 			</i>
 		</strong>
 	</div>
