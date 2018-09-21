@@ -64,7 +64,24 @@ div.more{
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	  position: relative;
+}
 
+.image4{
+	background-image: url(../img/tambahLowongan.jpg);
+	height: 650px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+}
+
+.image5{
+	background-image: url(../img/pelamar.jpg);
+	height: 650px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
 }
 
 h5 {
@@ -333,7 +350,7 @@ label {
 	width: 440px;
 	font-family:Humnst777 Lt BT;
 	font-size: 16pt;
-	letter-spacing: -1px;
+	
 	
 	}
 
@@ -353,8 +370,9 @@ input[type=text]:focus{
 	border-color: dodgerblue;
 	box-shadow: 0 0 5px 0 dodgerblue;
 }
-	
-.button1 {
+
+/* button */
+.btnMasuk {
 	background-color:#008080;
 	border-radius: 6px;
 	
@@ -364,7 +382,40 @@ input[type=text]:focus{
 	border-color: none;
 	font-size:14pt;
 	margin: auto;
+}
+
+.btnPelamarKerja {
+	background-color:#008080;
+	border-radius: 6px;
 	
+	top: 50%;
+	left: 50%;
+	width: 120px;
+	border-color: none;
+	font-size:14pt;
+	margin: auto;
+}
+
+.btnPerusahaanDaftar {
+	background-color:#008080;
+	border-radius: 6px;
+	top: 50%;
+	left: 50%;
+	width: 120px;
+	border-color: none;
+	font-size:14pt;
+	margin: auto;
+}
+
+.btnSimpan_TambahLowongan {
+	background-color:#008080;
+	border-radius: 6px;
+	top: 50%;
+	left: 50%;
+	width: 120px;
+	border-color: none;
+	font-size:14pt;
+	margin: auto;
 }
 
 
