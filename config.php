@@ -1,7 +1,8 @@
-<?php
-//database_connection.php
+<?php 
+$db = new mysqli("localhost","tkhekingc_infoker","infokerja12","thekingc_infokerja");
+if($db->connect_error){
+	echo "Connection".$db->connect_error;
+}
 
-$connect = new PDO('mysql:host=localhost;dbname=database: thekingc_infokerja', 'tkhekingc_infoker', 'infokerja12');
-session_start();
 
-?>
+ ?>
