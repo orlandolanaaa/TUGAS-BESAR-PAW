@@ -37,25 +37,8 @@ div.more{
 .footer-bottom { padding: 15px 0 17px 0; background: #0b1a38; text-align: left; color: #aaa; }
 
 
-.image1{
-	background-image: url(../img/2.jpg);
-	height: 400px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
 
-}
 
-.image2{
-	background-image: url(../img/3.jpg);
-	height: 400px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-
-}
 
 @media only screen and (max-width: 2000px) {
     .footer{
