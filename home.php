@@ -12,7 +12,7 @@ $user="SELECT user_namaP FROM user_perusahaan where user_emailP=$email";
 			echo "<h1>Welcome '<td>'. $user2 . '</td>'</h1> <a href='logout.php'>logout</a>";
 	}
 		else{
-			header("location:login.php");
+			echo 'belom login';
 	}
  ?>
  <!--PHP diatas ditaro di home yang ada log in account<-->
