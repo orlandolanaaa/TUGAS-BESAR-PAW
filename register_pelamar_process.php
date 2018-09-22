@@ -1,35 +1,79 @@
 <?php
-include('config.php');
+
+
+require 'phpmailer/PHPMailerAutoLoad.php';
 
 if(isset($_POST['register'])){
-	$username    = $_POST['name'];
-	$email       = $_POST['email'];
-	$password  	 = $_POST['password'];
+	include('config.php');
+	$name            = $_POST['name'];
+	$email           = $_POST['email'];
+	$password  	 	 = $_POST['password'];
+	$password1 		 = password_hash($password,PASSWORD_DEFAULT);
 	
-	$Email_check = $db->query("SELECT email  FROM user_pelamar WHERE email = '$email'");
-	if($Email_check->num_rows == 0){
+	$bytes 			 = openssl_random_pseudo_bytes(2);
+	$active			 = bin2hex($bytes);
+	
+	$Email_check = mysqli_query($con,"SELECT id_pelamar from user_pelamar WHERE email='$email'")or die (mysqli_connect_error());
+	if(mysqli_num_rows($Email_check)>0){
+		echo	'Maaf, Email sudah ada!';
+			
+	}
+	else{
+		$input=mysqli_query($con,"INSERT INTO user_pelamar VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
+		if($input)
+		{
 
-	}
-	else
+
+			$mail = new PHPMailer(true);                              
+				try {
+					$mail->SMTPDebug = 0;                                 
+					$mail->isSMTP();                                      
+					$mail->Host = 'kakuna.rapidplex.com;www.thekingcorp.org';  
+					$mail->SMTPAuth = true;                              	
+					$mail->Username = 'infokerja@thekingcorp.org';                 
+					$mail->Password = 'infokerja12';                           
+					$mail->SMTPSecure = 'ssl';                            
+					$mail->Port = 465 ;                                    		
+					$mail->setFrom('infokerja@thekingcorp.org', 'infokerja');
+					$mail->addAddress($email);               
+					$mail->addReplyTo('noreply@thekingcorp.org', 'noreply');
+					$mail->addCC('infokerja@thekingcorp.org');
+					$mail->addBCC('infokerja@thekingcorp.org');
+
+
+					
+					$mail->isHTML(true);                                
+					$mail->Subject = 'Dari:  INFOKERJA';
+					$mail->Body = '
+
+					Terima Kasih sudah mendaftar di INFOKERJA!
+					Silahkan klik link di bawah untuk masuk menyelesaikan proses registrasi
+
+					Klik link di bawah ini:
+					https://infokerja.thekingcorp.org/verify.php?active='.$active.'&email='.$email.'
+
+				
+						'; 
+
+						$mail->send();
+						header("Location: masuk.php");
+					return true;
+				} catch (Exception $e) {
+						
+						return false;
+						echo "Gagal mengirim";	
+				}
+			}
+		}	
+}else{	
+	echo 'test';
+	echo '<script>window.history.back()</script>';
+}
+
 	
-	{
-			$errors['email_error'] = "Sorry this email is already exist";
-			$email = "";
-	}
-	$errors    = array();
+
+
 	
-	}
-	if(!empty($username) && !empty($email) && !empty($password)){
-		$password = password_hash($password,PASSWORD_DEFAULT);
-		$Query = $db->query("INSERT INTO user_perusahaan (user_nameP,user_emailP,user_passwP) VALUES 
-        ('$username','$email','$password')");
-		if($Query){
-			header("location:success.php?signup_success='Your acccount is successfully created!'");
-		}else{
-			echo "<script>alert('Sorry query not work')</script>";
-		}
-		
-	}
 
 
 ?>

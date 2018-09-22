@@ -58,7 +58,7 @@ if(isset($_POST['register'])){
 						'; 
 
 						$mail->send();
-						header("Location: login.php");
+						header("Location: masuk.php");
 					return true;
 				} catch (Exception $e) {
 						

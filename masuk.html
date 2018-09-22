@@ -56,12 +56,14 @@
 					<br><br>
 				</strong>
 					<div>
+							<form action="login.php" method="POST">
 							<label  for="email" style="padding-left: 15px; padding-right: 15px">Email</label>
 							<input  type="text" id="email" name="email" ><br>
 							<label  for="password" style="padding-left: 15px; padding-right: 15px">Kata Sandi</label>
 							<input type="text" id="password" name="password"><br><br>
-							<a href="after_login.html" style="margin: 0; padding: 0;">
-							<button class="button btnMasuk" style="color:white">Masuk >></button></a>					
+							
+							<button class="button btnMasuk" style="color:white" name="login" type="submit">Masuk >></button>
+							</form>
 				</div>				
 
 			</div>
