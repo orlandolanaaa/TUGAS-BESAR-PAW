@@ -38,8 +38,8 @@ div.more{
 
 
 .image{
-	background-image: url(../img/image3.jpg);
-	height: 650px;
+	background-image: url(../img/1.jpg);
+	height: 400px;
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  background-size: cover;
@@ -47,50 +47,6 @@ div.more{
 
 }
 
-.image2{
-	background-image: url(../img/masuk.jpg);
-	height: 650px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-
-}
-
-.image3{
-	background-image: url(../img/perusahaan_daftar.jpg);
-	height: 650px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-}
-
-.image4{
-	background-image: url(../img/tambahLowongan.jpg);
-	height: 650px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-}
-
-.image5{
-	background-image: url(../img/pelamar.jpg);
-	height: 650px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-}
-
-h5 {
-    color: solidwhite;
-	font-size: 60px;
-	padding: 35px;
-	font-weight: bold;
-
-}
 
 
 @media screen and (max-width: 2000px){
@@ -340,110 +296,4 @@ h5 {
 		font-size: 15px;
 		color: white;
 	}
-}
-
-* {
-	box-sizing: border-box;
-}
-
-label {
-	width: 440px;
-	font-family:Humnst777 Lt BT;
-	font-size: 16pt;
-	
-	
-	}
-
-input[type=text], textarea{
-	border: 4px;
-	border-radius: 8px;
-	margin: 8px 0;
-	outline: none;
-	padding: 5px;
-	box-sizing: border-box;
-	color:gray;
-	font-size: 14px;
-	width: 300px;
-}
-
-input[type=text]:focus{
-	border-color: dodgerblue;
-	box-shadow: 0 0 5px 0 dodgerblue;
-}
-
-/* button */
-.btnMasuk {
-	background-color:#008080;
-	border-radius: 6px;
-	
-	top: 50%;
-	left: 50%;
-	width: 120px;
-	border-color: none;
-	font-size:14pt;
-	margin: auto;
-}
-
-.btnPelamarKerja {
-	background-color:#008080;
-	border-radius: 6px;
-	
-	top: 50%;
-	left: 50%;
-	width: 120px;
-	border-color: none;
-	font-size:14pt;
-	margin: auto;
-}
-
-.btnPerusahaanDaftar {
-	background-color:#008080;
-	border-radius: 6px;
-	top: 50%;
-	left: 50%;
-	width: 120px;
-	border-color: none;
-	font-size:14pt;
-	margin: auto;
-}
-
-.btnSimpan_TambahLowongan {
-	background-color:#008080;
-	border-radius: 6px;
-	top: 50%;
-	left: 50%;
-	width: 120px;
-	border-color: none;
-	font-size:14pt;
-	margin: auto;
-}
-
-
-.col-25 {
-    float: left;
-    width: 25%;
-	margin-top: 6px;
-
-}
-
-.col-75 {
-    float: left;
-    width: 75%;
-	margin-top: 6px;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
 }

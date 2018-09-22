@@ -77,7 +77,7 @@ div.more{
 
 .image5{
 	background-image: url(../img/pelamar.jpg);
-	height: 650px;
+	height: 750px;
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  background-size: cover;
@@ -94,11 +94,57 @@ h5 {
 
 
 @media screen and (max-width: 2000px){
-		.content-text {
-	  text-align: left;
+	.content-text {
+	  text-align: center;
 	  position: absolute;
 	  top: 3%;
-	  left: 5%;
+	  left: 30%;
+	  color: white;
+
+	}
+
+	.btnSimpan_ProfilPelamar {
+		background-color:#008080;
+		border-radius: 6px;
+		margin-left: 100%;
+		font-size:14pt;
+		width: 120px;
+	}
+	label {
+		width: 200px;
+		font-family:Humnst777 Lt BT;
+		font-size: 16pt;
+		text-align: left;
+		margin: 0;
+
+	}
+
+	input[type=text]{
+		border: 4px;
+		border-radius: 8px;
+		margin: 8px 0;
+		outline: none;
+		padding: 5px;
+		box-sizing: border-box;
+		color:gray;
+		font-size: 14px;
+		width: 300px;
+	}
+
+	input[type=text]:focus{
+		border-color: dodgerblue;
+		box-shadow: 0 0 5px 0 dodgerblue;
+	}
+
+	
+}
+
+@media screen and (max-width: 950px){
+	.content-text {
+	  text-align: center;
+	  position: absolute;
+	  top: 2%;
+	  left: 13%;
 	  color: white;
 
 	}
@@ -111,9 +157,43 @@ h5 {
 	  text-align: center;
 	  position: absolute;
 	  top: 2%;
-	  left: 18%;
+	  left: 8%;
 	  color: white;
 
+	}
+	.btnSimpan_TambahLowongan {
+		background-color:#008080;
+		border-radius: 6px;
+		margin-left: 0;
+		font-size:14pt;
+		width: 120px;
+	}
+	label {
+		width: 200px;
+		font-family:Humnst777 Lt BT;
+		font-size: 10pt;
+		text-align: left;
+		margin: 0;
+
+	}
+
+	input[type=text]{
+		border: 4px;
+		border-radius: 8px;
+		outline: none;
+		padding: 5px;
+		box-sizing: border-box;
+		color:gray;
+		font-size: 14px;
+		width: 200px;
+	}
+
+	input[type=text]:focus{
+		border-color: dodgerblue;
+		box-shadow: 0 0 5px 0 dodgerblue;
+	}
+	textarea{
+		width: 200px;
 	}
 	
 	
@@ -123,7 +203,6 @@ h5 {
 	  text-align: center;
 	  position: absolute;
 	  top: 2%;
-	  right: 24%;
 	  color: white;
 
 	}
@@ -346,30 +425,6 @@ h5 {
 	box-sizing: border-box;
 }
 
-label {
-	width: 440px;
-	font-family:Humnst777 Lt BT;
-	font-size: 16pt;
-	
-	
-	}
-
-input[type=text], textarea{
-	border: 4px;
-	border-radius: 8px;
-	margin: 8px 0;
-	outline: none;
-	padding: 5px;
-	box-sizing: border-box;
-	color:gray;
-	font-size: 14px;
-	width: 300px;
-}
-
-input[type=text]:focus{
-	border-color: dodgerblue;
-	box-shadow: 0 0 5px 0 dodgerblue;
-}
 
 /* button */
 .btnMasuk {
@@ -407,16 +462,7 @@ input[type=text]:focus{
 	margin: auto;
 }
 
-.btnSimpan_TambahLowongan {
-	background-color:#008080;
-	border-radius: 6px;
-	top: 50%;
-	left: 50%;
-	width: 120px;
-	border-color: none;
-	font-size:14pt;
-	margin: auto;
-}
+
 
 
 .col-25 {

@@ -1,13 +1,14 @@
 <!doctype html>
 <html>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="css/contact_us.css">
+  <link rel="stylesheet" type="text/css" href="css/profile_perusahaan.css">
+<script type="text/javascript" src="js/perusahaan.js"></script>
 </head>
  
 <body>
@@ -28,65 +29,52 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-					<li><a href="home.html" >Home</a></li>
-					<li><a href="pasang_lowongan.html" >Pasang Lowongan</a></li>
-					<li><a class="active" href="contact_us.html">Kontak</a></li>
-					<li><a href="tentang_kami.html" >Tentang Kami</a></li>
-	
-					<li style="padding-left: 10px; padding-right: 10px">
-						<a href="register.html" style="margin: 0; padding: 0;">
-						<button class="btn btn-success navbar-btn" style="width: 100%;">Registrasi</button></a>
-					</li>
-	
-					<li style="padding-left: 10px; padding-right: 10px">
-						<a href="masuk.html" style="margin: 0; padding: 0;">
-						<button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></a>
-					</li>
-					<li style="padding-right: 40px"></li>
+                <li><a class="active" href="#" >Home</a></li>
+				<li><a href="#" >Pasang Lowongan</a></li>
+				<li><a href="#">Kontak</a></li>
+				<li><a href="#" >Tentang Kami</a></li>
+				<li>
+					<img src="img/no_picture.gif" style="width: 30px; margin-left: 20px; margin-top: 10px;">
+				
+				</li>
+				<li style="padding-right: 20px;">
+					<div class="dropdown">
+					<button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown" style="text-decoration: none; color: white;margin-top:10px">Andrew Christian Riyanto
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Logout</a></li>
+					</ul>
+  				</div>
+				
+				</li>
             </ul>
         </div>
     </nav>
 </div>
-	<div>
-		<strong>
-			<h1 style="font-size: 40px; margin-left: 20px; margin-top: 50px;">
-				KONTAK
-			</h1>
-		</strong>
-		<div style="margin-top: 50px; margin-bottom: 100px">
+	<div class="image5">
+		<div class="content-text">
+			<strong>
+				<h1 style="padding-left: 10px; padding-right: 10px; margin-top:5px;">Profil Perusahaan</h1>
+				<p width="200px"><img  src="img\no_picture.gif" class="img-circle" style="width:25%; margin-top:15px;"></p>
+				
+				<div>
+					<form>
+						<label  for="namaperusahaan" style="padding-left: 15px; padding-right: 15px">Nama Perusahaan</label>
+						<input  type="text" id="namaperusahaan" name="namaperusahaan"><br>
+						<label  for="emailperusahaan" style="padding-left: 15px; padding-right: 15px">Email</label>
+						<input type="text" id="emailperusahaan" name="emailperusahaan"><br>
+						<label  for="lokasiperusahaan" style="padding-left: 15px; padding-right: 15px">Lokasi</label>
+						<input type="text" id="lokasiperusahaan" name="lokasiperusahaan"><br>
 
-			<div class="row">
-			  <div class="column" style="background-color:#ccc;">
-				<div style="margin-top: 50px">
-					<h2><img src="img/message_icon.png" style="max-width: 100px"></h2>
-					<h3>Email</h3>
-					<p>Infokerja.com</p>
-				</div>
-			  </div>
-			<div class="column" style="background-color:#ccc;">
-				<div style="margin-top: 50px">
-					<h2><img src="img/telp_icon.png" style="max-width: 100px"></h2>
-					<h3>No Telp</h3>
-					<p>(021) 20398648</p>
-				</div>
-			</div>
-			<div class="column" style="background-color:#ccc;">
-				<div style="margin-top: 50px">
-					<h2><img src="img/wa_icon.png" style="max-width: 100px"></h2>
-					<h3>WhatsApp</h3>
-					<p>0813 7720 4003</p>
-				</div>
-			  </div>
-			</div>
+						<button class="btnSimpan_ProfilPerusahaan" style="left: 10%; ">Simpan >></button>	
 
+					</form>
+			</div>				
+			</strong>
 		</div>
-	
 	</div>
 	
-		
-	
-	
-<div class="footer" >
+	<div class="footer" >
 	<div class="copyright">
 		Hak Cipta © 2018 infoKerja.com
 	</div>
@@ -126,10 +114,9 @@
 		</ul>
 	</div>
 </div>
- 			
 
 	
 	
-	
+ 		
 </body>
 </html>
