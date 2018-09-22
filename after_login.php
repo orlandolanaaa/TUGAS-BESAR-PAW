@@ -1,3 +1,20 @@
+<?php
+	session_start();
+	include (config.php);
+	$id=$_SESSION['id'];
+	$name=$_SESSION['name'];
+	$query="SELECT id_pelamar FROM user_pelamar WHERE id_pelamar='".$id."' ";
+	$result=mysqli_query($con,$query);
+
+	if($result==NULL)
+	{
+		echo 'anda belom login sebagai perusahaan!';
+		header("masuk.php");
+	}else
+	{
+		echo 'welcome perusahaan "'.$name.'"';
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
