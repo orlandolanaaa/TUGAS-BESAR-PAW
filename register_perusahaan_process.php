@@ -4,9 +4,11 @@ include('config.php');
 if(isset($_POST['register'])){
 	$user_namaP      = $_POST['user_namaP'];
 	$user_emailP     = $_POST['user_emailP'];
-	$user_passP  = $_POST['user_passP'];
+	$user_passP  	 = $_POST['user_passP'];
 	
 	
+	
+
 	$Email_check = $db->query("SELECT user_emailP  FROM user_perusahaan WHERE user_emailP = '$user_emailP'");
 	if($Email_check->num_rows == 0){
 

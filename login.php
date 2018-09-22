@@ -6,6 +6,7 @@ if(isset($_POST['login'])){
 	$user_passP = $_POST['password'];
 	$errors = array();
 	$query = $db->query("SELECT * FROM user_perusahaan WHERE user_emailP = '$user_emailP'");
+	 
 	if($query->num_rows == 0){
 		$errors['wrong_email'] = "Enter correct email";
 	}else{
