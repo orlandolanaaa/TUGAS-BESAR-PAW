@@ -12,11 +12,12 @@ if(isset($_POST['tambah'])){
     $pendidikan         =$_POST['pendidikan'];
     $deskripsi          =$_POST['deskripsi'];
     
-	$query="INSERT INTO lowongan VALUES (NULL,'$nama','$bidangpekerjaan','$lokasi',
-	'$pendidikan','$deskripsi','$id',NULL)";
-	$result=mysqli_query($db,$query);
 	
-	echo 'data berhasil dimasukan';
+	$result=mysqli_query($db,"INSERT INTO Lowongan VALUES (NULL,'$nama','$bidangpekerjaan','$lokasi',
+	'$pendidikan','$deskripsi','$id')");
+	
+    echo 'data berhasil dimasukan';
+    header('Location:after_login_perusahaan.php');
 }else {
     echo'tidak berhasil memasukan lowongan';
 

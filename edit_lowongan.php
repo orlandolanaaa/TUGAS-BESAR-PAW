@@ -65,6 +65,7 @@
 			<div class="column" style="background-color:#000000;">
 				<div class="isi1" style="text-align: left;">
 					<table >
+						
 						<tr>
 							<td>Perusahaan : PT. TENNO OPTIMA PERSADA</td>
 						</tr>
