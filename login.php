@@ -7,11 +7,11 @@ if(isset($_POST['login'])){
 
 	//buat ngecek ke tabel perusahaan
 	$query="SELECT status FROM user_perusahaan where email='".$email."'";
-	$result=mysqli_query($con,$query);
+	$result=mysqli_query($db,$query);
 	$row=mysqli_fetch_assoc($result);
 	//buat ngecek ke tabel pelamar
 	$query2="SELECT status FROM user_pelamar where email='".$email."'";
-	$result2=mysqli_query($con,$query2);
+	$result2=mysqli_query($db,$query2);
 	$row2=mysqli_fetch_assoc($result2);
 
 	if(mysqli_num_rows($result) == 0 && mysqli_num_rows($result2) == 0 ){
@@ -21,12 +21,12 @@ if(isset($_POST['login'])){
 			if($row['user_statusP']=='1'){
 				//ini kalo misalnya dia masuk ke tabel user_perusahaan
 				$query="SELECT password FROM user_perusahaan WHERE email='".$email."'";
-                $result=mysqli_query($con,$query);
+                $result=mysqli_query($db,$query);
 				$row=mysqli_fetch_assoc($result); 
 				
 					if(password_verify($password,$row['password'])){
                     $query="SELECT * FROM user_perusahaan WHERE email='".$email."'";
-                    $result=mysqli_query($con,$query); 
+                    $result=mysqli_query($db,$query); 
                     $row=mysqli_fetch_assoc($result);
 
                     session_start();
@@ -43,12 +43,12 @@ if(isset($_POST['login'])){
 			else if ($row2['status']=='1'){
 				//ini kalo misalnya dia masuk ke tabel user_pelamar
 					$query="SELECT password FROM user_pelamar WHERE email='".$email."'";
-               	 	$result=mysqli_query($con,$query);
+               	 	$result=mysqli_query($db,$query);
 					$row=mysqli_fetch_assoc($result); 
 				
 					if(password_verify($password,$row['password'])){
                     $query="SELECT * FROM user_pelamar WHERE email='".$email."'";
-                    $result=mysqli_query($con,$query); 
+                    $result=mysqli_query($db,$query); 
                     $row=mysqli_fetch_assoc($result);
 
                     session_start();

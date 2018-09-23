@@ -13,13 +13,13 @@ if(isset($_POST['register'])){
 	$bytes 			 = openssl_random_pseudo_bytes(2);
 	$active			 = bin2hex($bytes);
 	
-	$Email_check = mysqli_query($con,"SELECT id_pelamar from user_pelamar WHERE email='$email'")or die (mysqli_connect_error());
+	$Email_check = mysqli_query($db,"SELECT id_pelamar from user_pelamar WHERE email='$email'")or die (mysqli_connect_error());
 	if(mysqli_num_rows($Email_check)>0){
 		echo	'Maaf, Email sudah ada!';
 			
 	}
 	else{
-		$input=mysqli_query($con,"INSERT INTO user_pelamar VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
+		$input=mysqli_query($db,"INSERT INTO user_pelamar VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
 		if($input)
 		{
 

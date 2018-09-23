@@ -1,7 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-
-require 'phpmailer/PHPMailerAutoLoad.php';
+require 'mail/phpmailer/phpmailer/src/Exception.php';
+require 'mail/phpmailer/phpmailer/src/PHPMailer.php';
+require 'mail/phpmailer/phpmailer/src/SMTP.php';
+require 'mail/autoload.php';
 
 if(isset($_POST['register'])){
 	include('config.php');
@@ -13,13 +17,14 @@ if(isset($_POST['register'])){
 	$bytes 			 = openssl_random_pseudo_bytes(2);
 	$active			 = bin2hex($bytes);
 	
-	$Email_check = mysqli_query($con,"SELECT id_perusahaan from user_perusahaan WHERE email='$email'")or die (mysqli_connect_error());
+	$Email_check = mysqli_query($db,"SELECT id_perusahaan from user_perusahaan WHERE user_emailPs='$email'")or die (mysqli_connect_error());
 	if(mysqli_num_rows($Email_check)>0){
 		echo	'Maaf, Email sudah ada!';
+		header('Location:perusahaan_daftar.php');
 			
 	}
 	else{
-		$input=mysqli_query($con,"INSERT INTO user_perusahaan VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
+		$input=mysqli_query($db,"INSERT INTO user_perusahaan VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
 		if($input)
 		{
 
