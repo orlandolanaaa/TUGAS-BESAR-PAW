@@ -87,16 +87,14 @@
 						PT Tenno Optima bergerak dibidang distribusi dan perdagangan elektrikal, 
 						panel listrik, kabel listrik membutuhkan staf admin yang kompeten 
 						dan YANG SERIUS UNTUK BEKERJA (MEMILIKI KOMITMEN DAN TANGGUNG JAWAB)
-						<button class="btn btn-success navbar-btn"  style="margin-top: -20px; margin-left: 240px;">
-							<strong>Edit >></strong>
-			            </button>
+						
 					</p>
-					
-
 				</div>
-				
 
 			</div>
+			<button class="btn btn-success navbar-btn"  style="margin-top: -20px; margin-left: 240px;">
+							<strong>Edit >></strong>
+			            </button>
 		
 		</div>
 		
