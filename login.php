@@ -1,6 +1,7 @@
 <?php 
 
 include('config.php');
+
 if(isset($_POST['login'])){
 	$email 		= $_POST['email'];
 	$password 	= $_POST['password'];
@@ -25,15 +26,15 @@ if(isset($_POST['login'])){
 				$row=mysqli_fetch_assoc($result); 
 				
 					if(password_verify($password,$row['user_passP'])){
-                    $query="SELECT * FROM user_perusahaan WHERE email='$email'";
+                    $query="SELECT * FROM user_perusahaan WHERE user_emailP='$email'";
                     $result=mysqli_query($db,$query); 
                     $row=mysqli_fetch_assoc($result);
 
                     session_start();
-                    $_SESSION["id"] = $row['id_perusahaan'];
-                    $_SESSION["email"] = $row['user_emailP'];
-					$_SESSION["name"] = $row['user_namaP'];
-                    $_SESSION["status"] = $row['user_statusP'];
+                    $_SESSION["id"] 	= $row["id_perusahaan"];
+                    $_SESSION["email"] 	= $row["user_emailP"];
+					$_SESSION["name"] 	= $row["user_namaP"];
+                    $_SESSION["status"] = $row["user_statusP"];
 
 					header('Location:after_login_perusahaan.php');
 				}else{
@@ -52,9 +53,9 @@ if(isset($_POST['login'])){
                     $row=mysqli_fetch_assoc($result);
 
                     session_start();
-                    $_SESSION["id"] = $row['id_pelamar'];
-                    $_SESSION["email"] = $row['email'];
-					$_SESSION["nama"] = $row['nama'];
+                    $_SESSION["id"] 	= $row['id_pelamar'];
+                    $_SESSION["email"] 	= $row['email'];
+					$_SESSION["nama"] 	= $row['nama'];
 					$_SESSION["status"] = $row['status'];
 					header("Location: after_login.php");
 					
