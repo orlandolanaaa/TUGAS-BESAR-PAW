@@ -28,7 +28,7 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">            
 	   
 			<ul class="nav navbar-nav navbar-right" style="text-align: center;">
-			<li><a href="index.php" >Home</a></li>
+			<li><a href="pasang_lowongan.php" >Home</a></li>
 				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
 				<li><a href="contact_us.php">Kontak</a></li>
 				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
