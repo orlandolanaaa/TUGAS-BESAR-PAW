@@ -59,14 +59,19 @@
 					<form action="tambah_lowongan_process.php" method="POST">
 					<label  for="namaperusahaan" style="padding-left: 15px; padding-right: 15px">Nama Perusahaan</label>
 					<input  type="text" id="namaperusahaan" name="namaperusahaan"><br>
+					
 					<label  for="bidangpekerjaan" style="padding-left: 15px; padding-right: 15px">Bidang Pekerjaan</label>
 					<input type="text" id="bidangpekerjaan" name="bidangpekerjaan"><br>
+					
 					<label  for="lokasi" style="padding-left: 15px; padding-right: 15px">Lokasi</label>
 					<input type="text" id="lokasi" name="lokasi"><br>
+					
 					<label for="pendidikan" style="padding-left: 15px; padding-right: 15px">Pendidikan</label>
 					<input type="text" id="pendidikan" name="pendidikan"><br><br>
+					
 					<label for="deskripsi" style="padding-left: 15px; padding-right: 15px">Deskripsi</label>
 					<textarea id="deskripsi" name="deskripsi" rows="3" cols="35"></textarea><br><br>
+					
 					<button class="btnSimpan_TambahLowongan" name="tambah" type="submit">Simpan >></button>	
 					</form>
 				</div>				

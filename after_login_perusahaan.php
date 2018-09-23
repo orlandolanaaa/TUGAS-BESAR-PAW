@@ -1,10 +1,12 @@
 <?php
 	session_start();
-	include (config.php);
+	include('config.php');
+	
 	$id=$_SESSION['id'];
 	$name=$_SESSION['name'];
-	$query="SELECT id_perusahaan where id_user='".$id."' from user_pelamar ";
-	$result=mysqli_query($con,$query);
+	
+	$query="SELECT id_perusahaan from user_perusahaan where id_perusahaan='$id'  ";
+	$result=mysqli_query($db,$query);
 
 	if($result==NULL)
 	{
@@ -12,7 +14,7 @@
 		header("masuk.php");
 	}else
 	{
-		echo 'welcome perusahaan "'.$name.'"';
+		//echo 'welcome perusahaan "'.$name.'"';
 	}
 ?>
 <!DOCTYPE html>

@@ -1,7 +1,12 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require 'phpmailer/PHPMailerAutoLoad.php';
+require 'mail/phpmailer/phpmailer/src/Exception.php';
+require 'mail/phpmailer/phpmailer/src/PHPMailer.php';
+require 'mail/phpmailer/phpmailer/src/SMTP.php';
+require 'mail/autoload.php';
 
 if(isset($_POST['register'])){
 	include('config.php');
@@ -19,7 +24,7 @@ if(isset($_POST['register'])){
 			
 	}
 	else{
-		$input=mysqli_query($db,"INSERT INTO user_pelamar VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
+		$input=mysqli_query($db,"INSERT INTO user_pelamar VALUES(NULL,'$name', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
 		if($input)
 		{
 

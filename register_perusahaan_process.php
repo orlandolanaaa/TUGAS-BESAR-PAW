@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'mail/phpmailer/phpmailer/src/Exception.php';
-require 'mail/phpmailer/phpmailer/src/PHPMailer.php';
-require 'mail/phpmailer/phpmailer/src/SMTP.php';
+require 'mail/phpmailer/src/Exception.php';
+require 'mail/phpmailer/src/PHPMailer.php';
+require 'mail/phpmailer/src/SMTP.php';
 require 'mail/autoload.php';
 
 if(isset($_POST['register'])){
@@ -17,7 +17,7 @@ if(isset($_POST['register'])){
 	$bytes 			 = openssl_random_pseudo_bytes(2);
 	$active			 = bin2hex($bytes);
 	
-	$Email_check = mysqli_query($db,"SELECT id_perusahaan from user_perusahaan WHERE user_emailPs='$email'")or die (mysqli_connect_error());
+	$Email_check = mysqli_query($db,"SELECT id_perusahaan from user_perusahaan WHERE user_emailP='$email'")or die (mysqli_connect_error());
 	if(mysqli_num_rows($Email_check)>0){
 		echo	'Maaf, Email sudah ada!';
 		header('Location:perusahaan_daftar.php');
@@ -27,7 +27,8 @@ if(isset($_POST['register'])){
 		$input=mysqli_query($db,"INSERT INTO user_perusahaan VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
 		if($input)
 		{
-
+			header("Location: masuk.php");
+			
 			$mail = new PHPMailer(true);                              
 				try {
 					$mail->SMTPDebug = 0;                                 
@@ -67,6 +68,8 @@ if(isset($_POST['register'])){
 						return false;
 						echo "Gagal mengirim";	
 				}
+			}else {
+				echo 'sampe sini';
 			}
 		}	
 }else{	

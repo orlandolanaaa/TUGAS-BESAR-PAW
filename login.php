@@ -1,41 +1,41 @@
 <?php 
 
-include 'config.php';
+include('config.php');
 if(isset($_POST['login'])){
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$email 		= $_POST['email'];
+	$password 	= $_POST['password'];
 
 	//buat ngecek ke tabel perusahaan
-	$query="SELECT status FROM user_perusahaan where email='".$email."'";
+	$query="SELECT user_statusP FROM user_perusahaan where user_emailP='$email'";
 	$result=mysqli_query($db,$query);
 	$row=mysqli_fetch_assoc($result);
 	//buat ngecek ke tabel pelamar
-	$query2="SELECT status FROM user_pelamar where email='".$email."'";
+	$query2="SELECT status FROM user_pelamar where email='$email'";
 	$result2=mysqli_query($db,$query2);
 	$row2=mysqli_fetch_assoc($result2);
 
-	if(mysqli_num_rows($result) == 0 && mysqli_num_rows($result2) == 0 ){
+	/*if(mysqli_num_rows($result) == 0 && mysqli_num_rows($result2) == 0 ){
 		echo 'Anda belum register';
-	}else{
-		
+	}else{*/
+			
 			if($row['user_statusP']=='1'){
 				//ini kalo misalnya dia masuk ke tabel user_perusahaan
-				$query="SELECT password FROM user_perusahaan WHERE email='".$email."'";
+				$query="SELECT user_passP FROM user_perusahaan WHERE user_emailP='$email'";
                 $result=mysqli_query($db,$query);
 				$row=mysqli_fetch_assoc($result); 
 				
-					if(password_verify($password,$row['password'])){
-                    $query="SELECT * FROM user_perusahaan WHERE email='".$email."'";
+					if(password_verify($password,$row['user_passP'])){
+                    $query="SELECT * FROM user_perusahaan WHERE email='$email'";
                     $result=mysqli_query($db,$query); 
                     $row=mysqli_fetch_assoc($result);
 
                     session_start();
                     $_SESSION["id"] = $row['id_perusahaan'];
                     $_SESSION["email"] = $row['user_emailP'];
-					$_SESSION["nama"] = $row['user_namaP'];
-                    $_SESSION["status"] = $row['status'];
+					$_SESSION["name"] = $row['user_namaP'];
+                    $_SESSION["status"] = $row['user_statusP'];
 
-					header("Location: after_login_perusahaan.php");
+					header('Location:after_login_perusahaan.php');
 				}else{
 					echo 'bukan di perusahaan';
 				}
@@ -63,7 +63,7 @@ if(isset($_POST['login'])){
 				}
 			}
 
-		}
+		/*}*/
 
 }else{
 	echo 'Gagal masuk phpnya';
