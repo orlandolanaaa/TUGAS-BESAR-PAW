@@ -89,12 +89,8 @@
 				</div>
 				<div class="buttonLamar">
 						<button class="btn_lamarPekerjaan" style="right; background-color:#008080; border-radius: 6px; font-size:14pt;width: 200px;">Lamar Pekerjaan >></button>
-					</div>
-
-			</div>
-			
-				
-		
+				</div>
+			</div>		
 		</div>
 		
 					
