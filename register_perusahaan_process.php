@@ -2,10 +2,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'mail/phpmailer/src/Exception.php';
-require 'mail/phpmailer/src/PHPMailer.php';
-require 'mail/phpmailer/src/SMTP.php';
-require 'mail/autoload.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/phpmailer/src/Exception.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/phpmailer/src/PHPMailer.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/phpmailer/src/SMTP.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/autoload.php';
 
 if(isset($_POST['register'])){
 	include('config.php');
@@ -24,7 +24,7 @@ if(isset($_POST['register'])){
 			
 	}
 	else{
-		$input=mysqli_query($db,"INSERT INTO user_perusahaan VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
+		$input=mysqli_query($db,"INSERT INTO user_perusahaan VALUES(NULL,'$name', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
 		if($input)
 		{
 			header("Location: masuk.php");
