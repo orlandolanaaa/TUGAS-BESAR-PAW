@@ -28,12 +28,20 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-                <li><a class="active" href="#" >Home</a></li>
-				<li><a href="#" >Pasang Lowongan</a></li>
-				<li><a href="#">Kontak</a></li>
-				<li><a href="#" >Tentang Kami</a></li>
-				<li style="padding-left: 10px; padding-right: 10px"><button class="btn btn-success navbar-btn" style="width: 100%;">Registrasi</button></li>
-				<li style="padding-left: 10px; padding-right: 10px"><button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></li>
+                <li><a class="active" href="index.php" >Home</a></li>
+				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
+				<li><a href="contact_us.php">Kontak</a></li>
+				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
+
+				<li style="padding-left: 10px; padding-right: 10px">
+					<a href="register.php" style="margin: 0; padding: 0;">
+					<button class="btn btn-success navbar-btn" style="width: 100%;">Registrasi</button></a>
+				</li>
+
+				<li style="padding-left: 10px; padding-right: 10px">
+					<a href="masuk.php" style="margin: 0; padding: 0;">
+					<button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></a>
+				</li>
 				<li style="padding-right: 40px"></li>
             </ul>
         </div>
