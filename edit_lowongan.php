@@ -55,11 +55,23 @@
 		<h1 style="font-size: 40px; position: absolute; margin-top: 40px; margin-left: 5%; color:#000000">
 			EDIT LOWONGAN
 		</h1>
-		<div class="row" style=" opacity: 0.5; ">
+		<?php
+		include('config.php');
+		session_start();
+		$id=$_SESSION["id"];
+		
+		$sql="SELECT * FROM Lowongan where id_perusahaan='$id'";
+		
+		$result=mysqli_query($db,$sql);
+		
+		while ($row=mysqli_fetch_array($result)) {
+		echo '
+		
+		<div class="row" style=" opacity: 0.9; ">
 			<div class="column" style="background-color:#000000;">
 				<img src="img/Maestro.jpg" class="img-circle" style="width: 100px; padding-top: 30px; padding-bottom: 20px;">
 				<strong>
-					<p >Staff Admin PT Tenno Optima, Jakarta Pusat</p>
+					<p >'.$row["bidang_lowongan"].'</p>
 				</strong>
 			</div>
 			<div class="column" style="background-color:#000000;">
@@ -67,13 +79,13 @@
 					<table >
 						
 						<tr>
-							<td>Perusahaan : PT. TENNO OPTIMA PERSADA</td>
+							<td>Perusahaan : '.$row["nama_lowongan"].'</td>
 						</tr>
 						<tr>
-							<td>Lokasi     : Jakarta Pusat</td>
+							<td>Lokasi     : '.$row["lokasi_lowongan"].'</td>
 						</tr>
 						<tr>
-							<td>Pendidikan : S1</td>
+							<td>Pendidikan : '.$row["pendidikan_lowongan"].'</td>
 						</tr>
 						
 					
@@ -85,12 +97,10 @@
 				<div class="isi2" style="text-align: left; font-size:16px;">
 					<p>Deskripsi Pekerjaan
 					<br align="justify">
-						PT Tenno Optima bergerak dibidang distribusi dan perdagangan elektrikal, 
-						panel listrik, kabel listrik membutuhkan staf admin yang kompeten 
-						dan YANG SERIUS UNTUK BEKERJA (MEMILIKI KOMITMEN DAN TANGGUNG JAWAB)
-						<button class="btn btn-success navbar-btn"  style="margin-top: -20px; margin-left: 240px;">
-							<strong>Edit >></strong>
-			            </button>
+						'.$row["deskripsi_lowongan"].'
+						<br><br>
+						<button style="background-color:#008080; border-radius:6px; width:80px;"><strong>Edit</strong><button>
+						<button style="background-color:#008080; border-radius:6px; width:80px;"><strong>Hapus</strong><button>
 					</p>
 					
 
@@ -100,6 +110,9 @@
 			</div>
 		
 		</div>
+		';
+		}
+		?>
 		
 		
 	
