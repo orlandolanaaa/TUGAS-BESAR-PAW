@@ -25,7 +25,7 @@ if(isset($_POST['login'])){
 				$row=mysqli_fetch_assoc($result); 
 				
 					if(password_verify($password,$row['password'])){
-                    $query="SELECT * FROM register WHERE email='".$email."'";
+                    $query="SELECT * FROM user_perusahaan WHERE email='".$email."'";
                     $result=mysqli_query($con,$query); 
                     $row=mysqli_fetch_assoc($result);
 

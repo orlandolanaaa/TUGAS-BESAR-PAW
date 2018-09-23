@@ -56,6 +56,7 @@
 				<br>
 			</strong>
 				<div>
+					<form action="tambah_lowongan_process.php" method="POST">
 					<label  for="namaperusahaan" style="padding-left: 15px; padding-right: 15px">Nama Perusahaan</label>
 					<input  type="text" id="namaperusahaan" name="namaperusahaan"><br>
 					<label  for="bidangpekerjaan" style="padding-left: 15px; padding-right: 15px">Bidang Pekerjaan</label>
@@ -66,8 +67,9 @@
 					<input type="text" id="pendidikan" name="pendidikan"><br><br>
 					<label for="deskripsi" style="padding-left: 15px; padding-right: 15px">Deskripsi</label>
 					<textarea id="deskripsi" name="deskripsi" rows="3" cols="35"></textarea><br><br>
-					<button class="btnSimpan_TambahLowongan">Simpan >></button>	
-			</div>				
+					<button class="btnSimpan_TambahLowongan" name="tambah" type="submit">Simpan >></button>	
+					</form>
+				</div>				
 		</div>
 	</div>
 

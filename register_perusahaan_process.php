@@ -23,9 +23,6 @@ if(isset($_POST['register'])){
 		if($input)
 		{
 
-	
-	
-
 			$mail = new PHPMailer(true);                              
 				try {
 					$mail->SMTPDebug = 0;                                 

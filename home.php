@@ -1,20 +1,3 @@
-<?php 
-session_start();
-$email=$_SESSION['user_login'];
-//select dulu dia ada di perusahaan ato ngga
-$user="SELECT user_namaP FROM user_perusahaan where user_emailP=$email";
-	if($user!=NULL)
-	{
-		echo "<h1>Welcome '<td>'. $user2 . '</td>'</h1> <a href='logout.php'>logout</a>";
-	}else if($user2!=NULL){
-		$user2="SELECT user_namaP FROM user_pelamar where email=$email";
-		if($user2!=NULL)
-			echo "<h1>Welcome '<td>'. $user2 . '</td>'</h1> <a href='logout.php'>logout</a>";
-	}
-		else{
-			echo 'belom login';
-	}
- ?>
  <!--PHP diatas ditaro di home yang ada log in account<-->
 
 <!DOCTYPE html>
