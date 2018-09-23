@@ -27,10 +27,10 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right" style="text-align: center;">
-				<li><a href="home.html" >Home</a></li>
-				<li><a href="pasang_lowongan.html" >Pasang Lowongan</a></li>
-				<li><a href="contact_us.html">Kontak</a></li>
-				<li><a href="tentang_kami.html" >Tentang Kami</a></li>
+				<li><a href="home.php" >Home</a></li>
+				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
+				<li><a href="contact_us.php">Kontak</a></li>
+				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
 				<li>
 					<img src="img/no_picture.gif" style="width: 30px; margin-left: 20px; margin-top: 10px;">
 				
@@ -40,7 +40,8 @@
 					<button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown" style="text-decoration: none; color: white;margin-top:10px">Andrew Christian Riyanto
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu">
-					  <li><a href="#">Logout</a></li>
+					<li><a href="profil_pelamar.php">Edit profile</a></li>
+					  <li><a href="index.php">Logout</a></li>
 					</ul>
   				</div>
 				

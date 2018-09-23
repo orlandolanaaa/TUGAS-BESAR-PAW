@@ -28,18 +28,18 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-					<li><a href="home.html" >Home</a></li>
-					<li><a href="pasang_lowongan.html" >Pasang Lowongan</a></li>
-					<li><a href="contact_us.html">Kontak</a></li>
-					<li><a href="tentang_kami.html" >Tentang Kami</a></li>
+			<li><a href="index.php" >Home</a></li>
+				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
+				<li><a href="contact_us.php">Kontak</a></li>
+				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
 	
 					<li style="padding-left: 10px; padding-right: 10px">
-						<a href="register.html" style="margin: 0; padding: 0;">
+						<a href="register.php" style="margin: 0; padding: 0;">
 						<button class="active btn btn-success navbar-btn" style="width: 100%;">Registrasi</button></a>
 					</li>
 	
 					<li style="padding-left: 10px; padding-right: 10px">
-						<a href="masuk.html" style="margin: 0; padding: 0;">
+						<a href="masuk.php" style="margin: 0; padding: 0;">
 						<button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></a>
 					</li>
 					<li style="padding-right: 40px"></li>
@@ -56,7 +56,7 @@
 			<strong>
 				<h2>TEMUKAN PEKERJAAN IMPIANMU</h2>
 			</strong>
-			<a href="pelamar_kerja.html" style="margin: 0; padding: 0;">
+			<a href="pelamar_kerja.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-primary navbar-btn" >
 				<strong>Registrasi Sekarang &#62;&#62;</strong>
 			</button></a>
@@ -71,7 +71,7 @@
 			<strong>
 				<h2>TEMUKAN KANDIDAT POTENSIONAL</h2>
 			</strong>
-			<a href="perusahaan_daftar.html" style="margin: 0; padding: 0;">
+			<a href="perusahaan_daftar.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-success navbar-btn">
 				<strong>Registrasi Sekarang &#62;&#62;</strong>
 			</button></a>
