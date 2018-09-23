@@ -55,7 +55,7 @@ if(isset($_POST['register'])){
 					Silahkan klik link di bawah untuk masuk menyelesaikan proses registrasi
 
 					Klik link di bawah ini:
-					https://infokerja.thekingcorp.org/verify.php?active='.$active.'&email='.$email.'
+					https://infokerja.thekingcorp.org/verify_pelamar.php?active='.$active.'&email='.$email.'
 
 				
 						'; 

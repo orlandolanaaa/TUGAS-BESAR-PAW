@@ -24,7 +24,7 @@ if(isset($_POST['register'])){
 			
 	}
 	else{
-		$input=mysqli_query($db,"INSERT INTO user_perusahaan VALUES(NULL,'$nama', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
+		$input=mysqli_query($db,"INSERT INTO user_perusahaan VALUES(NULL,'$name', '$email', '$password1', '$active', 0)") or die(mysqli_connect_error());
 		if($input)
 		{
 			header("Location: masuk.php");

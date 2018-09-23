@@ -13,7 +13,7 @@ if(isset($_POST['login'])){
 	$query2="SELECT status FROM user_pelamar where email='$email'";
 	$result2=mysqli_query($db,$query2);
 	$row2=mysqli_fetch_assoc($result2);
-
+	header('Location:after_login_perusahaan.php');
 	/*if(mysqli_num_rows($result) == 0 && mysqli_num_rows($result2) == 0 ){
 		echo 'Anda belum register';
 	}else{*/
