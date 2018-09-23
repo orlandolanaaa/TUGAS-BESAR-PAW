@@ -46,10 +46,10 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-				<li><a class="active" href="home.html" >Home</a></li>
-				<li><a href="pasang_lowongan.html" >Pasang Lowongan</a></li>
-				<li><a href="contact_us.html">Kontak</a></li>
-				<li><a href="tentang_kami.html" >Tentang Kami</a></li>
+				<li><a class="active" href="index.php" >Home</a></li>
+				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
+				<li><a href="contact_us.php">Kontak</a></li>
+				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
 			<li>
 				<img src="img/no_picture.gif" style="width: 30px; margin-left: 20px; margin-top: 10px;">
 			
@@ -59,8 +59,8 @@
 				<button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown" style="text-decoration: none; color: white;margin-top:10px">Perusahaan A
 				<span class="caret"></span></button>
 				<ul class="dropdown-menu">
-					<li><a href="profil_pelamar.html">Edit profile</a></li>
-				  <li><a href="home.html">Logout</a></li>
+					<li><a href="profil_pelamar.php">Edit profile</a></li>
+				  <li><a href="index.php">Logout</a></li>
 				</ul>
 			  </div>
 			
@@ -80,18 +80,18 @@
 		</strong>
 	</div>
 			
-			<a href="tambah_lowongan.html" style="margin: 0; padding: 0;">
+			<a href="tambah_lowongan.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-success navbar-btn btn-center" >
 				<strong>TAMBAH LOWONGAN >></strong>
 			</button></a>
 
 			<br>
-			<a href="lihat_pelamar.html" style="margin: 0; padding: 0;">
+			<a href="lihat_pelamar.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-primary navbar-btn btn-left">
 				<strong>LIHAT PELAMAR >></strong>
 			</button></a>
 
-			<a href="" style="margin: 0; padding: 0;">
+			<a href="edit_lowongan.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-primary navbar-btn btn-right">
 				<strong>EDIT LOWONGAN >></strong>
 			</button></a>

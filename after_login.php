@@ -8,7 +8,7 @@
 
 	if($result==NULL)
 	{
-		echo 'anda belom login sebagai perusahaan!';
+		echo 'anda belum login sebagai perusahaan!';
 		header("masuk.php");
 	}else
 	{
@@ -44,8 +44,8 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-					<li><a class="active" href="home.html" >Home</a></li>
-					<li><a href="pasang_lowongan.html" >Pasang Lowongan</a></li>
+					<li><a class="active" href="index.php" >Home</a></li>
+					<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
 					<li><a href="contact_us.html">Kontak</a></li>
 					<li><a href="tentang_kami.html" >Tentang Kami</a></li>
 				<li>
