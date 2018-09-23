@@ -49,7 +49,7 @@
     </nav>
 </div>
 
-<div class="image3">
+<div class="image6">
 		<div class="content-text">
 			<strong>
 				<h1 style="padding-left: 10px; padding-right: 10px">Tentang Kami</h1><br>
