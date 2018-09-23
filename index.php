@@ -1,5 +1,3 @@
- <!--PHP diatas ditaro di home yang ada log in account<-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/hasilPencarian.css">
 
 </head> 
 <body>
@@ -23,12 +21,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">LOGO</a>
+			<a href="#" class="navbar-brand"><img src="img/logo.png" style="width:85px;"></a>
         </div>
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
+            
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-                <li><a class="active" href="index.php" >Home</a></li>
+				<li><a class="active" href="index.php" >Home</a></li>
 				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
 				<li><a href="contact_us.php">Kontak</a></li>
 				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
@@ -43,7 +42,7 @@
 					<button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></a>
 				</li>
 				<li style="padding-right: 40px"></li>
-            </ul>
+			</ul>
         </div>
     </nav>
 </div>
@@ -271,6 +270,49 @@
 			</div>
 		</form>
 		</div>
+</div>
+<div >
+		<div class="row" style=" color: white; opacity: 0.5; padding-bottom: 40px;">
+			<div class="column" style="background-color:#000000;">
+				<img src="img/no_picture.gif" style="width: 100px; padding-top: 30px; padding-bottom: 20px;">
+				<strong>
+					<p >Nama Perusahaan</p>
+				</strong>
+			</div>
+			<div class="column" style="background-color:#000000;">
+				<div class="isi1" style="text-align: left;">
+					<table >
+						<tr>
+							<td>Perusahaan       : ....</td>
+						</tr>
+						<tr>
+							<td>Lokasi        : .... </td>
+						</tr>
+						<tr>
+							<td>Pendidikan : ...</td>
+						</tr>
+						<tr>
+							<td>Keahlian   : TI</td>
+						</tr>
+					
+					</table>
+				</div>
+				
+			</div>
+			<div class="column" style="background-color:#000000; text-align: left">
+				<div class="isi2" style="text-align: left;">
+					<p>Deskripsi Pkerjaan : </p>
+					<p>......</p>
+					<div class="buttonDetail">
+						<button class="btn_detail" style="right; background-color:#008080; border-radius: 6px; font-size:14pt;width: 200px;">Lamar Pekerjaan >></button>
+					</div>
+				</div>
+				
+				
+			</div>
+		
+		</div>
+	
 </div>
 <div class="footer" >
 	<div class="copyright">
