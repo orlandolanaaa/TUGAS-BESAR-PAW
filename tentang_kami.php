@@ -49,15 +49,20 @@
     </nav>
 </div>
 
-<div class="image3">
+<div class="image6">
 		<div class="content-text">
 			<strong>
-				<h1 style="padding-left: 10px; padding-right: 10px">Tentang Kami</h1>
-				<br><br>
+				<h1 style="padding-left: 10px; padding-right: 10px">Tentang Kami</h1><br>
 				<div>
-					<h3 style="padding-left: 50px; padding-right: 50px">Situs infoKerja berdiri pad tahun 2018 dengan tujuan mempermudah mencari pekerjaan dan perekrutan karyawan.</h3>		
+					<h2 style="padding-left: 10px; padding-right: 50px; font-size:13pt; text-align:justify">Situs infoKerja berdiri pada tahun 2018 dengan tujuan mempermudah mencari pekerjaan dan perekrutan karyawan. infoKerja tidak hanya berusaha untuk memberikan pelayanan berkualitas yang sesuai harapan pengguna, tapi juga memberikan pengalaman yang aman dan terjamin.
+					Informasi yang dikirim tetap bersifat pribadi dan hanya digunakan oleh perusahaan sebagai bahan evaluasi dan digunakan oleh Pelamar untuk melamar secara online. Informasi tersebut tidak akan diberikan ke pihak ketiga.</h2>		
+					<br><br>
+					<h2 style="padding-left: 10px; padding-right: 50px; font-size:15pt;"><strong><u>Kebijakan Privasi</u></strong></h2>
+					<h2 style="padding-left: 10px; padding-right: 50px; font-size:13pt;">1. Account Anda dilindungi dengan password. Artinya, hanya Anda yang mempunyai akses ke account Anda dan hanya Anda yang bisa mengubah segala informasi yang dimasukkan melalui account Anda.</h2>
+					<h2 style="padding-left: 10px; padding-right: 50px; font-size:13pt;">2. Setelah Anda selesai menggunakan situs kami, jangan lupa untuk logout. Hal ini untuk memastikan bahwa tidak ada pihak lain yang mengakses account Anda, khususnya bila komputer digunakan bersama-sama.</h2>
+					<h2 style="padding-left: 10px; padding-right: 50px; font-size:13pt;">3. Apabila suatu saat nanti kami harus mengubah Polis Kerahasiaan kami, maka kami akan menghubungi pengguna via email agar dapat mengetahui informasi apa saja yang kami kumpulkan dan bagaimana kami menggunakan informasi tersebut. </h2>
+		
 			</div>				
-			</strong>
 		</div>
 	</div>
 

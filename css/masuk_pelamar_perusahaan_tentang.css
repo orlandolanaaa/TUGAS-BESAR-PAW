@@ -84,6 +84,15 @@ div.more{
 	  position: relative;
 }
 
+.image6{
+	background-image: url(../img/about.png);
+	height: 650px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+}
+
 h5 {
     color: solidwhite;
 	font-size: 60px;
