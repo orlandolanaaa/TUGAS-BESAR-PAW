@@ -34,12 +34,12 @@
 				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
 
 				<li style="padding-left: 10px; padding-right: 10px">
-					<a href="register.html" style="margin: 0; padding: 0;">
+					<a href="register.php" style="margin: 0; padding: 0;">
 					<button class="btn btn-success navbar-btn" style="width: 100%;">Registrasi</button></a>
 				</li>
 
 				<li style="padding-left: 10px; padding-right: 10px">
-					<a href="masuk.html" style="margin: 0; padding: 0;">
+					<a href="masuk.php" style="margin: 0; padding: 0;">
 					<button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></a>
 				</li>
 				<li style="padding-right: 40px"></li>
