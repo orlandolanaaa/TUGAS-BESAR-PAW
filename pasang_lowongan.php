@@ -27,18 +27,18 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-                <li><a class="active" href="home.html" >Home</a></li>
-				<li><a href="pasang_lowongan.html" >Pasang Lowongan</a></li>
-				<li><a href="contact_us.html">Kontak</a></li>
-				<li><a href="tentang_kami.html" >Tentang Kami</a></li>
+                <li><a class="active" href="pasang_lowongan.php" >Home</a></li>
+				<li><a href="pasang_lowongan.php" >Pasang Lowongan</a></li>
+				<li><a href="contact_us.php">Kontak</a></li>
+				<li><a href="tentang_kami.php" >Tentang Kami</a></li>
 
 				<li style="padding-left: 10px; padding-right: 10px">
-					<a href="register.html" style="margin: 0; padding: 0;">
+					<a href="register.php" style="margin: 0; padding: 0;">
 					<button class="btn btn-success navbar-btn" style="width: 100%;">Registrasi</button></a>
 				</li>
 
 				<li style="padding-left: 10px; padding-right: 10px">
-					<a href="masuk.html" style="margin: 0; padding: 0;">
+					<a href="masuk.php" style="margin: 0; padding: 0;">
 					<button class="btn btn-primary navbar-btn" style="width: 100%;">Login</button></a>
 				</li>
 				<li style="padding-right: 40px"></li>
@@ -57,18 +57,18 @@
 		</strong>
 	</div>
 			
-			<a href="tambah_lowongan.html" style="margin: 0; padding: 0;">
+			<a href="tambah_lowongan.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-success navbar-btn btn-center" >
 				<strong>TAMBAH LOWONGAN >></strong>
 			</button></a>
 
 			<br>
-			<a href="lihat_pelamar.html" style="margin: 0; padding: 0;">
+			<a href="lihat_pelamar.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-primary navbar-btn btn-left">
 				<strong>LIHAT PELAMAR >></strong>
 			</button></a>
 
-			<a href="" style="margin: 0; padding: 0;">
+			<a href="edit_lowongan.php" style="margin: 0; padding: 0;">
 			<button class="btn btn-primary navbar-btn btn-right">
 				<strong>EDIT LOWONGAN >></strong>
 			</button></a>
