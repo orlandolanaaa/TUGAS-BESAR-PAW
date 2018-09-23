@@ -3,10 +3,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'mail/phpmailer/phpmailer/src/Exception.php';
-require 'mail/phpmailer/phpmailer/src/PHPMailer.php';
-require 'mail/phpmailer/phpmailer/src/SMTP.php';
-require 'mail/autoload.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/phpmailer/src/Exception.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/phpmailer/src/PHPMailer.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/phpmailer/src/SMTP.php';
+require '/home/thekingc/infokerja.thekingcorp.org/mail/autoload.php';
 
 if(isset($_POST['register'])){
 	include('config.php');
